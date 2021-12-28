@@ -1,0 +1,80 @@
+$primary_color: #242dfe;
+$primary_transparent: rgba(36, 45, 254, 0.1);
+$lenear: linear-gradient(180deg, #ffffff 26.1%, #f2f5fa 110.16%);
+$surface: #413df6;
+$surface_text: #e7e8fe;
+$white: #ffffff;
+$black: #000000;
+$text_color: #595959;
+$rating_color: #fbcf32;
+$gray: #9fa5b6;
+$default_gap: 10px;
+$default_gap_double: $default_gap + $default_gap;
+$default_pad: 20px;
+$content_gap: 80px;
+
+$font1: "Merriweather", serif;
+$font2: "Bitter", serif;
+$font3: "Roboto", sans-serif;
+
+@function transition($name, $time) {
+  @return $name $time ease-in-out;
+}
+
+%borderRadius5 {
+  border-radius: 5px;
+}
+
+$boxShadow: 0 4px 100px rgba(36, 45, 254, 0.2);
+
+%listStyle {
+  margin: $default_pad 0;
+  & > * {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    svg {
+      margin-right: 10px;
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    a {
+      color: inherit;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
+
+%d-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%card {
+  @extend %borderRadius5;
+  background-color: $white;
+  padding: $default_pad;
+  box-shadow: $boxShadow;
+}
+
+@media only screen and (min-width: 768px) {
+  $default_gap: $default_pad;
+}
+
+@media only screen and (min-width: 992px) {
+  %d-md-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

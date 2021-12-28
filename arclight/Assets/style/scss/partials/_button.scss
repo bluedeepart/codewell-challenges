@@ -1,0 +1,80 @@
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  @extend %borderRadius5;
+  font-family: $font2;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 18px 24px;
+  transition: transition(all, 0.3s);
+  display: inline-flex;
+
+  img {
+    margin-right: 10px;
+    display: block;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: $default_pad 0;
+
+    .btn {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    background-color: $primary_color;
+    color: $white;
+    font-weight: bold;
+
+    span {
+      font-weight: normal;
+    }
+
+    &:hover {
+      background-color: $surface;
+    }
+  }
+
+  &--secondary {
+    background-color: $white;
+    color: $text_color;
+  }
+
+  &--menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .btn {
+    &--menu {
+      display: block;
+
+      img {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .btn {
+    &:not(&--menu) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}

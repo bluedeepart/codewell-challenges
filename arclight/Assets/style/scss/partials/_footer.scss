@@ -1,0 +1,54 @@
+.footer {
+  padding: $content_gap 0 $default_pad;
+  color: $surface_text;
+
+  &__info,
+  &__list {
+    margin-bottom: 40px;
+  }
+
+  h4,
+  &__logo {
+    color: $white;
+    margin-bottom: $default_pad;
+  }
+
+  &__list {
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    font-size: 16px;
+
+    &__list {
+      &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    font-size: 16px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__info {
+      max-width: 430px;
+      padding-left: 40px;
+    }
+  }
+}
