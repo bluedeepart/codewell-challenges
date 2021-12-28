@@ -1,0 +1,64 @@
+$primary_color: #f6ca45;
+$secondary_color: #000000;
+$gray: #f3f5f7;
+$text_color: #70747d;
+$heading_color: #110e27;
+$hover_color: #f3f4f6;
+$text_color_light: #adadad;
+$white: #ffffff;
+$border_color: #e5e5e5;
+
+%borderRadius5 {
+  border-radius: 5px;
+}
+
+%card {
+  padding: 30px 20px;
+  border: 1px solid $border_color;
+  @extend %borderRadius5;
+  margin-bottom: 30px;
+  background-color: $white;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+%listStyleNone {
+  list-style: none;
+}
+
+%d-flex {
+  display: flex;
+}
+
+%d-flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  %d-md-flex {
+    display: flex;
+  }
+
+  %d-md-flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  %card {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  %card {
+    padding: 20px;
+  }
+}

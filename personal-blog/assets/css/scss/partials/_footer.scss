@@ -1,0 +1,121 @@
+.footer {
+  background-image: linear-gradient(
+    to bottom,
+    $white 0%,
+    $white 50%,
+    $primary_color 50%,
+    $primary_color 100%
+  );
+  color: $heading_color;
+  text-align: center;
+  padding: 40px 0;
+
+  &__logo {
+    font-weight: bold;
+  }
+
+  &__list {
+    @extend %listStyleNone;
+
+    &__item {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__info {
+    color: $secondary_color;
+  }
+
+  &__subscribe {
+    @extend %borderRadius5;
+    background-color: $secondary_color;
+    color: $text_color_light;
+    padding: 40px 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+      color: $white;
+      margin-bottom: 10px;
+    }
+
+    &__left {
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__right {
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .footer {
+    background-image: linear-gradient(
+      to bottom,
+      $white 0%,
+      $white 40%,
+      $primary_color 40%,
+      $primary_color 100%
+    );
+    padding: 40px 20px;
+    &__subscribe {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      padding-right: 0;
+      margin-bottom: 40px;
+      max-width: 820px;
+
+      &__left {
+        flex-basis: 35%;
+        margin: 0;
+        margin-right: 20px;
+
+        &__form {
+          .form__group {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    background-image: linear-gradient(
+      to bottom,
+      $white 0%,
+      $white 65%,
+      $primary_color 65%,
+      $primary_color 100%
+    );
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+
+      .mb-20 {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  .footer {
+    &__subscribe {
+      border-radius: 0;
+    }
+  }
+}

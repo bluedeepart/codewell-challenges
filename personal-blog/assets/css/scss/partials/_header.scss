@@ -1,0 +1,136 @@
+.navbar {
+  padding: 40px 0;
+  .container {
+    width: 100%;
+    @extend %d-flex-between;
+  }
+
+  &__brand {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: bold;
+    color: $heading_color;
+    flex-basis: 140px;
+  }
+
+  &__list {
+    @extend %listStyleNone;
+  }
+
+  button.btn--primary {
+    min-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #menu__icon {
+    display: none;
+  }
+
+  .navbar {
+    &__menu {
+      display: flex;
+      flex-basis: calc(100% - 160px);
+      justify-content: space-between;
+      align-items: center;
+
+      .form__group {
+        min-width: 289px;
+        margin-right: 25px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-basis: 630px;
+      padding: 0 40px;
+
+      &__item {
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+
+      &__link {
+        &:hover {
+          color: $heading_color;
+        }
+      }
+    }
+
+    &__form {
+      @extend %d-md-flex-between;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    padding: 20px 0;
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #ffffff;
+      z-index: 1;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &__list {
+      min-width: 300px;
+      text-align: center;
+      &__item {
+        font-size: 18px;
+      }
+      &__link {
+        display: block;
+        padding: 10px;
+      }
+    }
+
+    .form__group {
+      min-width: 300px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+
+      .form__input {
+        max-width: 100%;
+      }
+    }
+
+    button.btn--primary {
+      min-width: auto;
+      width: 100%;
+    }
+  }
+
+  .menu-open {
+    overflow: hidden;
+    padding-right: 17px;
+
+    .navbar {
+      &__menu {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+      }
+    }
+  }
+
+  #menu__icon {
+    padding: 20px;
+    position: relative;
+    right: -20px;
+  }
+}

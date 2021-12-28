@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Personal Blog</title>
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar__brand">Jessica Davidson</div>
+            <nav class="navbar__menu">
+                <button class="btn btn--close"><img src="assets/Icons/general-icons/Add.svg" alt="Add"></button>
+                <ul class="navbar__list">
+                    <li class="navbar__list__item"><a href="" class="navbar__list__link">Writings</a></li>
+                    <li class="navbar__list__item"><a href="" class="navbar__list__link">Awards</a></li>
+                    <li class="navbar__list__item"><a href="" class="navbar__list__link">Sponsor</a></li>
+                </ul>
+                <form class="navbar__form">
+                    <div class="form__group">
+                        <label class="form__label">Subscribe</label>
+                        <input type="text" class="form__input form__input--gray" placeholder="john@example.com">
+                        <img src="assets/Icons/general-icons/Email.svg" alt="email">
+                    </div>
+                    <button class="btn btn--primary" type="submit"><img src="assets/Icons/general-icons/Add.svg" alt="Add"> Create new post</button>
+                </form>
+            </nav>
+            <button id="menu__icon" class="btn"><img src="assets/Icons/general-icons/Menu.svg" alt="Menu"></button>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main">
+
+        <div class="container">
+            <div class="main__wrapper">
+                <aside class="col__left">
+                    <ul class="categ__list">
+                        <li class="categ__list__item"><a href="#" class="categ__list__link"><img src="assets/Emojis/Emoji.svg" alt="SaaS">SaaS</a></li>
+                        <li class="categ__list__item"><a href="#" class="categ__list__link"><img src="assets/Emojis/Emoji-1.svg" alt="Design">Design</a></li>
+                        <li class="categ__list__item"><a href="#" class="categ__list__link"><img src="assets/Emojis/Emoji-2.svg" alt="Development">Development</a></li>
+                    </ul>
+                    <div class="seperator"></div>
+                    <ul class="social__list">
+                        <li class="social__list__item"><a href="#" class="social__list__link"><img src="assets/Icons/social-icons/Behance.svg" alt="Behance">Behance<img src="assets/Icons/general-icons/new-window.svg"></a></li>
+                        <li class="social__list__item"><a href="#" class="social__list__link"><img src="assets/Icons/social-icons/Twitter.svg" alt="Twitter">Twitter<img src="assets/Icons/general-icons/New Window.svg"></a></li>
+                        <li class="social__list__item"><a href="#" class="social__list__link"><img src="assets/Icons/social-icons/LinkedIn.svg" alt="LinkedIn">LinkedIn<img src="assets/Icons/general-icons/New Window.svg"></a></li>
+                    </ul>
+                </aside>
+
+                <section class="col__center blog">
+                    <article class="blog__post">
+                        <div class="blog__post__wrapper">
+                            <div class="blog__post__info order-md-2">
+                                <h2>Understanding the reasons behind a successful startup</h2>
+                                <p>Going over the reasons why most successful startups should understand the basics of business instead of just launching into the void without any market study.</p>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/Images/post-image.png" sizes="100vw">
+                                <img src="assets/Images/post-image-mob.png" alt="Post 2">
+                            </picture>
+                        </div>
+                        <div class="blog__post__footer">
+                            <div class="blog__post__byline">
+                                <div class="author">
+                                    <div class="author__avatar">
+                                        <img src="assets/Avatars/User.svg" alt="Avatar">
+                                    </div>
+                                    <p>Jessica Davidson</p>
+                                </div>
+                                <div class="blog__post__timestamp">
+                                    <p>12 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="blog__post__date">
+                                <p>23/11/2021</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="announcement">
+                        <div class="announcement__wrapper">
+                            <div class="announcement__info">
+                                <h2>Announcing a new platform, Codewell.</h2>
+                                <p>Codewell is a platform that helps you improve your frontend skills by practicing on real world design templates.</p>
+                                <div class="button__wrapper">
+                                    <button class="btn btn--primary">Visit Codewell →</button>
+                                    <button class="btn btn--transparent">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="announcement__img">
+                                <img src="assets/Images/Illustration.svg" alt="Illustration">
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog__post">
+                        <div class="blog__post__wrapper">
+                            <div class="blog__post__info order-md-2">
+                                <h2>I quit my job last year to pursue freelancing full time.</h2>
+                                <p>Quitting my full time job was not an easy decision to make, but it was one that has changed my life 180 degrees. Here’s my story from A to Z.</p>
+                            </div>
+                            <div class="blog__post__img order-md-1">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/Images/post-image-1.png" sizes="100vw">
+                                    <img src="assets/Images/post-image-mob.png" alt="Post 2">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="blog__post__footer">
+                            <div class="blog__post__byline">
+                                <div class="author">
+                                    <div class="author__avatar">
+                                        <img src="assets/Avatars/User.svg" alt="Avatar">
+                                    </div>
+                                    <p>Jessica Davidson</p>
+                                </div>
+                                <div class="blog__post__timestamp">
+                                    <p>12 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="blog__post__date">
+                                <p>20/11/2021</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <div class="pagin">
+                        <div class="pagin__icon pagin__icon--left">
+                            <img src="assets/Icons/general-icons/arrow-right.svg" alt="Arrow">
+                        </div>
+                        <ul class="pagin__list">
+                            <li class="pagin__list__item pagin__list__item--active">1</li>
+                            <li class="pagin__list__item">2</li>
+                            <li class="pagin__list__item">3</li>
+                            <li class="pagin__list__item">4</li>
+                            <li class="pagin__list__item">5</li>
+                        </ul>
+                        <div class="pagin__icon pagin__icon--right">
+                            <img src="assets/Icons/general-icons/arrow-right.svg" alt="Arrow">
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="col__right">
+                    <form class="search__post__form">
+                        <div class="form__group">
+                            <label class="form__label">&sube;</label>
+                            <input type="text" class="form__input" placeholder="Search Post">
+                        </div>
+                        <button class="btn">⌘S</button>
+                    </form>
+                    <div class="project">
+                        <h3>Projects</h3>
+                        <div class="seperator"></div>
+                        <ul class="project__list">
+                            <li class="project__list__item"><a href="#" class="project__list__link">Codewell</a></li>
+                            <li class="project__list__item"><a href="#" class="project__list__link">Spense</a></li>
+                            <li class="project__list__item"><a href="#" class="project__list__link">YelpCamp</a></li>
+                            <li class="project__list__item"><a href="#" class="project__list__link">Google</a></li>
+                            <li class="project__list__item"><a href="#" class="project__list__link">Algorithms</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- cookie start -->
+                <div class="cookie">
+                    <div class="cookie__wrapper">
+                        <h3><img src="assets/Emojis/Emoji-3.svg" alt=""> Cookie Settings</h3>
+                        <p>We use cookies, some of them are essential others are optional. <a href="#" id="expand-cookie">Learn more</a></p>
+                    </div>
+                    <ul class="cookie__option">
+                        <li class="cookie__option__item">
+                            <div class="cookie__prefrense">
+                                <div class="cookie__prefrense__wrapper">
+                                    <h3>Necessary Cookies</h3>
+                                    <p>These cookies are necessary and cannot be disabled.</p>
+                                </div>
+                                <div class="cookie__prefrense__selector">
+                                    <input type="checkbox" name="cookie" id="pref1">
+                                    <label for="pref1">Necessary Cookies</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cookie__option__item">
+                            <div class="cookie__prefrense">
+                                <div class="cookie__prefrense__wrapper">
+                                    <h3>Analytics</h3>
+                                    <p>Used by advertising partners to serve you meaningful ads.</p>
+                                </div>
+                                <div class="cookie__prefrense__selector">
+                                    <input type="checkbox" name="cookie" id="pref2">
+                                    <label for="pref2">Analytics</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cookie__option__item">
+                            <div class="cookie__prefrense">
+                                <div class="cookie__prefrense__wrapper">
+                                    <h3>Preferences</h3>
+                                    <p>We use this to personalize your web experience.</p>
+                                </div>
+                                <div class="cookie__prefrense__selector">
+                                    <input type="checkbox" name="cookie" id="pref3">
+                                    <label for="pref3">Preferences</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="button__group">
+                        <button class="btn btn--primary">Accept All Cookies</button>
+                        <button class="btn btn--secondary">Decline</button>
+                    </div>
+                </div>
+                <!-- cookie end -->
+
+            </div>
+
+        </div>
+    </main>
+    <!-- main end -->
+
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__subscribe mb-40">
+                <div class="footer__subscribe__left mb-40">
+                    <h2>Want to stay up to date with my project Codewell?</h2>
+                    <p class="mb-20">Receive non-frequent emails about my startup Codewell, you can unsubscribe any time.</p>
+                    <form class="footer__subscribe__left__form">
+                        <div class="form__group d-center">
+                            <label class="form__label">Newsletter</label>
+                            <input type="text" class="form__input" placeholder="john@example.com">
+                        </div>
+                    </form>
+                </div>
+                <div class="footer__subscribe__right">
+                    <img src="assets/Images/newsletter-image.png" alt="Newsletter">
+                </div>
+            </div>
+
+            <div class="footer__info">
+                <div class="footer__logo mb-20">
+                    Jessica Davidson
+                </div>
+                <div class="footer__copyright mb-20">
+                    © 2021 Jessica Davidson, All Rights Reserved
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__list__item"><a href="#" class="footer__list__link">LinkedIn</a></li>
+                    <li class="footer__list__item"><a href="#" class="footer__list__link">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

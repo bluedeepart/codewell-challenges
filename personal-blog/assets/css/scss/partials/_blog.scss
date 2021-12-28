@@ -1,0 +1,153 @@
+.blog {
+  position: relative;
+  &__post {
+    @extend %card;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    &__footer {
+      width: 100%;
+    }
+
+    &__footer,
+    &__byline,
+    .author {
+      @extend %d-flex-between;
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    &__date {
+      display: none;
+    }
+
+    .author {
+      font-weight: bold;
+      color: $heading_color;
+
+      &__avatar {
+        margin-right: 10px;
+      }
+    }
+
+    &__timestamp {
+      padding-left: 40px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        left: 20px;
+        top: 10px;
+        border-radius: 50%;
+        background-color: $text_color;
+      }
+    }
+  }
+}
+
+.announcement {
+  @extend %card;
+  background-color: $primary_color;
+  color: $heading_color;
+  border-radius: 0;
+  border-color: $primary_color;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    padding: 20px 0;
+  }
+
+  &__img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .blog__post,
+  .announcement {
+    &__date {
+      display: block;
+    }
+    &__wrapper {
+      justify-content: space-between;
+      flex-direction: unset;
+    }
+    &__img {
+      display: block;
+      align-self: flex-end;
+      img {
+        display: block;
+      }
+    }
+
+    &__info {
+      flex-basis: calc(100% - 313px);
+    }
+  }
+
+  .announcement {
+    padding-top: 0;
+    padding-bottom: 0;
+    &__wrapper {
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .blog__post,
+  .announcement {
+    &__info {
+      flex-basis: calc(100% - 240px);
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .blog {
+    &__post {
+      &__info {
+        margin-top: 20px;
+      }
+      &__img {
+        margin-bottom: 20px;
+      }
+
+      &__byline {
+        font-size: 14px;
+      }
+
+      &__timestamp {
+        padding-left: 20px;
+        &::before {
+          left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .blog__post {
+    &__byline {
+      display: block;
+    }
+
+    &__timestamp {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
