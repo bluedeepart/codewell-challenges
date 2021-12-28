@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Spense Landing Page, Codewell Challenge, Deepart, Front-end Developer">
+    <meta name="description" content="Spense Landing Page, a Codewell challenge developed by Deepart.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Inter:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <title>Spense Landing Page | Codewell Challenge</title>
+</head>
+
+<body class="font-source text-base">
+
+    <!-- header -->
+    <header class="bg-black text-white py-5 md:py-3 text-center font-cabin">
+        <div class="container max-w-full xl:max-w-screen-xl flex justify-center">
+            <div class="font-bold"><img src="Assets/images/celebrate.svg" alt="celebrate" class="mr-2 inline"> <span class="inline">To celebrate Spense’s launch, we will be waiving all fees for the entire month of April. <a href="#" class="underline font-bold underline-offset-2">You will be receiving 100% of the earnings.</a></span> <img src="Assets/images/celebrate.svg" alt="celebrate" class="ml-2 inline"></>
+            </div>
+        </div>
+    </header>
+
+    <!-- nav -->
+    <nav class="py-10 bg-prime-100">
+        <div class="container max-w-full xl:max-w-screen-xl">
+            <div class="flex justify-between items-center relative">
+                <h1 class="text-lg font-bold text-black font-cabin lg:w-1/3 leading-4">spense.</h1>
+                <div class="hidden w-full lg:w-2/3 lg:flex lg:justify-between lg:items-center absolute lg:static bg-prime-100 lg:bg-transparent left-0 top-10 pb-5 lg:mb-0" id="primary-menu">
+                    <ul class="font-cabin text-black cursor-pointer hover:text-prime-800 lg:flex lg:justify-between lg:items-center lg:space-x-5">
+                        <li class="mb-4 lg:mb-0">Business</li>
+                        <li class="mb-4 lg:mb-0">Pricing</li>
+                        <li class="mb-4 lg:mb-0">Features</li>
+                    </ul>
+                    <ul class="font-cabin text-black cursor-pointer hover:text-prime-800 lg:flex lg:justify-between lg:items-center lg:space-x-5">
+                        <li class="mb-4 lg:mb-0">Login</li>
+                        <li class="mb-4 lg:mb-0"><button role="button" class="leading-6 py-4 px-6 bg-black text-white rounded-5 font-bold mxs:w-full lg:w-auto w-full">Get Started</button></li>
+                    </ul>
+                </div>
+                <div class="lg:hidden" id="menu-btn">
+                    <img src="Assets/images/hamburger-menu.svg" alt="menu" class="cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- banner -->
+        <section class="pb-10 bg-prime-100 text-prime-700">
+            <div class="container max-w-full xl:max-w-screen-xl lg:flex lg:items-center">
+                <picture class="mb-10 block lg:w-6/12 lg:order-2 lg:ml-8">
+                    <source media="(min-width: 62rem)" srcset="Assets/images/hero-image-lg.png">
+                    <source media="(min-width: 48rem)" srcset="Assets/images/hero-image-md.png">
+                    <img src="Assets/images/hero-image-sm.png" alt="Hero image">
+                </picture>
+                <div class="lg:order-1">
+                    <h2 class="text-xl md:text-2xl font-bold text-prime-800 mb-2 font-cabin">Share your unfiltered thoughts. Get paid.</h2>
+                    <p class="mb-4">Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <em>just</em> that.</p>
+                    <ul class="list-checkmark font-bold mb-8">
+                        <li class="before:bg-checkmark before:absolute before:top-0 before:left-0 before:w-6 before:h-6 relative pl-8 mb-2">Receive 99% off the earnings.</li>
+                        <li class="before:bg-checkmark before:absolute before:top-0 before:left-0 before:w-6 before:h-6 relative pl-8 mb-2">Get paid via Debit Card, ACH, or PayPal.</li>
+                        <li class="before:bg-checkmark before:absolute before:top-0 before:left-0 before:w-6 before:h-6 relative pl-8">Withdraw your earnings anytime.</li>
+                    </ul>
+                    <div class="xs:w-fullflex xs:space-x-4 font-cabin">
+                        <input type="text" placeholder="john@example.com" class="placeholder:text-prime-500 border border-prime-400 rounded-5 py-4 px-6 leading-6 w-64 mxs:w-full mxs:mb-4">
+                        <button role="button" class="leading-6 py-4 px-6 bg-black text-white rounded-5 font-bold mxs:w-full">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- logo slider -->
+        <section class="py-10">
+            <div class="container max-w-full xl:max-w-screen-xl flex space-x-6" id="logo-slider">
+                <div class=""><img src="Assets/images/facebook-logo.png" alt="facebook"></div>
+                <div class=""><img src="Assets/images/dribbble-logo.png" alt="dribble"></div>
+                <div class=""><img src="Assets/images/youtube-logo.png" alt="youtube"></div>
+                <div class="hidden md:block"><img src="Assets/images/pinterest-logo.png" alt="pinterest"></div>
+                <div class="hidden md:block"><img src="Assets/images/twitter-logo.png" alt="twitter"></div>
+                <div class="hidden lg:block"><img src="Assets/images/reddit-logo.png" alt="reddit"></div>
+                <div class="hidden lg:block"><img src="Assets/images/google-logo.png" alt="google"></div>
+                <div class="hidden lg:block"><img src="Assets/images/slack-logo.png" alt="slack"></div>
+            </div>
+        </section>
+
+
+        <!-- escrow -->
+        <section>
+            <div class="container max-w-full xl:max-w-screen-xl">
+                <div class="bg-prime-100 text-prime-700 px-10 pt-10 rounded-10 lg:flex lg:items-end">
+                    <div class="lg:w-7/12 lg:p-10 lg:pr-20">
+                        <h2 class="text-xl text-black font-bold font-cabin mb-2">Secure your money with Escrow.</h2>
+                        <p class="mb-4">Spense uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need to worry about scams.</p>
+                        <p><a href="#" class="font-bold font-cabin underline underline-offset-2">Learn more about Escrow →</a></p>
+                    </div>
+                    <div class=" lg:w-5/12">
+                        <picture class="flex justify-center">
+                            <source media="(min-width: 62rem)" srcset="Assets/images/iphone-mockup.png">
+                            <img src="Assets/images/phone-mockup-sm.png" alt="Phone">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- text editor -->
+        <section class="pt-8 text-prime-700">
+            <div class="container max-w-full xl:max-w-screen-xl lg:flex lg:items-center">
+                <div class="mb-8 lg:mb-0 lg:order-2 lg:w-5/12 lg:-mt-10">
+                    <h2 class="text-xl text-black font-bold font-cabin mb-2">A text editor like no other.</h2>
+                    <p class="mb-4">Our text editor pulls you into focus mode with it’s simplistic design and usability so you can put out your best writings.</p>
+                    <p><a href="#" class="font-bold underline font-cabin underline-offset-2">Text Editor Live Demo →</a></p>
+                </div>
+                <div class="lg:order-1 lg:w-7/12">
+                    <img src="Assets/images/text-editor.png" alt="Phone" class="block mx-auto">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-black text-prime-600 pt-16 pb-8">
+        <div class="container max-w-full xl:max-w-screen-xl flex flex-wrap">
+            <div class="mb-8 w-full md:w-6/12 lg:w-4/12 md:order-1 sm:pr-4">
+                <h3 class="text-lg font-cabin font-bold text-white mb-2">spense.</h3>
+                <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that.</p>
+            </div>
+            <div class="mb-8 w-6/12 md:w-3/12 lg:w-2/12 md:order-4">
+                <h3 class="font-inter font-lg font-bold text-white mb-4">Company</h3>
+                <ul class="font-inter">
+                    <li class="mb-2 hover:text-white cursor-pointer">About</li>
+                    <li class="mb-2 hover:text-white cursor-pointer">Customers</li>
+                    <li class="mb-2 hover:text-white cursor-pointer">Blog</li>
+                </ul>
+            </div>
+            <div class="mb-8 w-6/12 md:w-3/12 lg:w-2/12 md:order-5">
+                <h3 class="font-inter font-lg font-bold text-white mb-4">Opportunities</h3>
+                <ul class="font-inter">
+                    <li class="mb-2 hover:text-white cursor-pointer">Jobs</li>
+                </ul>
+            </div>
+            <div class="mb-8 w-6/12 md:w-3/12 lg:w-2/12 md:order-2">
+                <h3 class="font-inter font-lg font-bold text-white mb-4">Sitemap</h3>
+                <ul class="font-inter">
+                    <li class="mb-2 hover:text-white cursor-pointer">Homepage</li>
+                </ul>
+            </div>
+            <div class="mb-8 w-6/12 md:w-3/12 lg:w-2/12 md:order-3">
+                <h3 class="font-inter font-lg font-bold text-white mb-4">Resources</h3>
+                <ul class="font-inter">
+                    <li class="mb-2 hover:text-white cursor-pointer">Support</li>
+                    <li class="mb-2 hover:text-white cursor-pointer">Contact</li>
+                    <li class="mb-2 hover:text-white cursor-pointer">FAQ</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Assets/js/script.js"></script>
+</body>
+
+</html>

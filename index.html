@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Codewell challenges developed by Deepart.">
+    <meta name="keyword" content="Codewell challenges, Deepart, front-end development, codewell projects">
+    <title>Codewell Challenges</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            padding: 16px;
+            background-color: #f1f1f1;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            display: grid;
+            grid-gap: 16px;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        ul li {
+            list-style: none;
+            padding: 8px;
+            background-color: #fff;
+            transition: all .3s ease-in-out;
+        }
+
+        ul li:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, .125);
+        }
+
+        ul li a {
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+
+        ul li a p {
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #343434
+        }
+
+        /* ul li a img {
+            max-width: 200px;
+        } */
+
+        @media only screen and (max-width: 991px) {
+            ul {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            ul {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            ul {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Codewell Challenges</h1>
+    <ul>
+        <li><a href="/codewell-challenges/personal-blog/" target="_blank" rel="noopener noreferrer"><img src="images/Personal_Blog_Slider_Thumbnail.jpg" alt="Personal Blog">
+                <p>Personal Blog (BEM)</p>
+            </a></li>
+        <li><a href="/codewell-challenges/arclight/" target="_blank" rel="noopener noreferrer"><img src="images/Arclight_Slider_Thumbnail.jpg" alt="Arclight Landing page">
+                <p>Arclight Landing page (BEM)</p>
+            </a></li>
+        <li><a href="/codewell-challenges/spense/" target="_blank" rel="noopener noreferrer"><img src="images/Spense_Thumbnail.jpg" alt="Spense Landing page">
+                <p>Spense Landing page (Tailwind CSS)</p>
+            </a></li>
+    </ul>
+
+</body>
+
+</html>
