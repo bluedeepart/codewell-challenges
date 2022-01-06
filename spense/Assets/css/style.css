@@ -836,7 +836,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .before\:bg-checkmark::before {
   content: var(--tw-content);
-  background-image: url('Assets/images/checkmark.svg');
+  background-image: url('url('../../Assets/images/checkmark.svg')');
 }
 
 .hover\:text-prime-800:hover {
