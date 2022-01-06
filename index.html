@@ -17,18 +17,17 @@
         }
 
         body {
-            padding: 16px;
             background-color: #f1f1f1;
+        }
+
+        main {
+            padding: 16px;
+            padding-bottom: 80px;
         }
 
         img {
             max-width: 100%;
             height: auto;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 1rem;
         }
 
         ul {
@@ -62,9 +61,20 @@
             color: #343434
         }
 
-        /* ul li a img {
-            max-width: 200px;
-        } */
+
+        header,
+        footer {
+            background-color: #343434;
+            color: #fff;
+            padding: 20px 16px;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+        }
 
         @media only screen and (max-width: 991px) {
             ul {
@@ -87,21 +97,29 @@
 </head>
 
 <body>
-    <h1>Codewell Challenges</h1>
-    <ul>
-        <li><a href="/codewell-challenges/personal-blog/" target="_blank" rel="noopener noreferrer"><img src="images/Personal_Blog_Slider_Thumbnail.jpg" alt="Personal Blog">
-                <p>Personal Blog (BEM)</p>
-            </a></li>
-        <li><a href="/codewell-challenges/arclight/" target="_blank" rel="noopener noreferrer"><img src="images/Arclight_Slider_Thumbnail.jpg" alt="Arclight Landing page">
-                <p>Arclight Landing page (BEM)</p>
-            </a></li>
-        <li><a href="/codewell-challenges/spense/" target="_blank" rel="noopener noreferrer"><img src="images/Spense_Thumbnail.jpg" alt="Spense Landing page">
-                <p>Spense Landing page (Tailwind CSS)</p>
-            </a></li>
-        <li><a href="https://bluedeepart.github.io/worksite-react-app/" target="_blank" rel="noopener noreferrer"><img src="images/Workside_Slider_Thumbnail.jpg" alt="Spense Landing page">
-                <p>Workside Job Board (React and Tailwind CSS)</p>
-            </a></li>
-    </ul>
+    <header>
+        <h1>Codewell Challenges</h1>
+    </header>
+    <main>
+        <ul>
+            <li><a href="/codewell-challenges/2021/personal-blog/" target="_blank" rel="noopener noreferrer"><img src="images/Personal_Blog_Slider_Thumbnail.jpg" alt="Personal Blog">
+                    <p>Personal Blog (BEM)</p>
+                </a></li>
+            <li><a href="/codewell-challenges/2021/arclight/" target="_blank" rel="noopener noreferrer"><img src="images/Arclight_Slider_Thumbnail.jpg" alt="Arclight Landing page">
+                    <p>Arclight Landing page (BEM)</p>
+                </a></li>
+            <li><a href="/codewell-challenges/2021/spense/" target="_blank" rel="noopener noreferrer"><img src="images/Spense_Thumbnail.jpg" alt="Spense Landing page">
+                    <p>Spense Landing page (Tailwind CSS)</p>
+                </a></li>
+            <li><a href="https://bluedeepart.github.io/worksite-react-app/" target="_blank" rel="noopener noreferrer"><img src="images/Workside_Slider_Thumbnail.jpg" alt="Spense Landing page">
+                    <p>Workside Job Board (React and Tailwind CSS)</p>
+                </a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; <a href="http://deepart.in" target="_blank" rel="noopener noreferrer" style="color: inherit;text-decoration: none;">Deeprt.in</a></p>
+    </footer>
 
 </body>
 
