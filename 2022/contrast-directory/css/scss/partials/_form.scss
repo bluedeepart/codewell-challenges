@@ -1,0 +1,138 @@
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $placeholder_color !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $placeholder_color !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $placeholder_color !important;
+}
+
+.form {
+  &-control {
+    padding: 1rem 1.5rem;
+    min-width: 244px;
+    border: none;
+    background-color: $gray;
+    font-size: 18px;
+    line-height: 24px;
+
+    &:focus,
+    &:active,
+    &:active:focus {
+      box-shadow: none;
+      background-color: $gray;
+    }
+  }
+}
+
+/* search inout */
+.search-group {
+  position: relative;
+
+  label {
+    position: absolute;
+    left: 20px;
+    top: 14px;
+  }
+
+  .form-control {
+    padding-left: 50px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* submit resourse form */
+$modalGutter: 20px;
+
+.modal {
+
+  &-header,
+  &-body,
+  &-footer {
+    padding: $modalGutter $modalGutter 0;
+  }
+
+  &-footer {
+    padding-bottom: $modalGutter;
+  }
+
+  &-title {
+    font-size: 24px;
+  }
+
+  &-backdrop {
+    &.show {
+      opacity: .2;
+    }
+  }
+}
+
+.submit-resourec-form {
+
+  label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .form {
+    &-group {
+      &:not(:last-child) {
+        margin-bottom: $modalGutter;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 767px) {
+  $modalGutter: 36px;
+
+  .modal {
+
+    &-header,
+    &-body,
+    &-footer {
+      padding: $modalGutter $modalGutter 0;
+    }
+
+    &-footer {
+      padding-bottom: $modalGutter;
+    }
+
+    &-dialog {
+      min-width: 700px;
+    }
+  }
+
+  .submit-resourec-form {
+    .form {
+      &-group {
+        &:not(:last-child) {
+          margin-bottom: $modalGutter;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .search-group {
+    &.form-group {
+      margin-bottom: .5rem;
+      margin-right: 1.5rem;
+    }
+
+    .form-control {
+      max-width: 244px;
+      margin-bottom: 0;
+    }
+  }
+}

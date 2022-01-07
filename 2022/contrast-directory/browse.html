@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Contrast Directory, Codewell challenge done by Deepart. Practicing CSS, loops, and fetch Javascript skills with this challenge." />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Browse - Contrast Directory | Codewell Challenge</title>
+</head>
+
+<body>
+
+    <!-- nav -->
+    <nav class="navbar default-pt default-pb navbar-expand-lg bg-white">
+        <div class="container-md">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/contrast-logo.svg" alt="Contrast">
+            </a>
+            <button class="navbar-toggler border-0 box-shadow-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <img src="images/hamburger-menu.svg" alt="Menu">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="browse.html">Browse</a>
+                    </li>
+                </ul>
+                <div class="d-lg-flex align-items-start">
+                    <div class="form-group search-group">
+                        <label for="search"><img src="images/search.svg" alt="search"><span class="visually-hidden">Search</span></label>
+                        <input type="text" id="search" class="form-control" placeholder="Search resources">
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button role="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modelId">Submit Resource</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /nav -->
+
+    <main>
+
+        <!-- submit resource form -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title">Submit Resource</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="submit-resourec-form">
+                            <div class="form-group">
+                                <label for="resourse-name" class="form-label required">Resource Name</label>
+                                <input type="text" name="resourse-name" id="resourse-name" class="form-control" placeholder="UI8" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for="resourse-description" class="form-label required d-flex justify-content-between">
+                                    <div>Resource Description</div>
+                                    <div>(Max. 150 char.)</div>
+                                </label>
+                                <textarea name="resourse-description" id="resourse-description" class="form-control" placeholder="100% curated digital marketplace with a growing library of high quality UX/UI design resources and freebies for designers." aria-describedby="helpId" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="resourse-icon" class="form-label required">Resource Link</label>
+                                <input type="text" name="resourse-icon" id="resourse-icon" class="form-control" placeholder="https://ui8.net" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for="resourse-icon-link" class="form-label required">Resource Icon Link</label>
+                                <input type="text" name="resourse-icon-link" id="resourse-icon-link" class="form-control" placeholder="https://ui8.net" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for="resourse-category" class="form-label required">Resource Category</label>
+                                <select class="form-select" name="resourse-category" id="resourse-category">
+                                    <option selected value="Mockups">Mockups</option>
+                                    <option value="Fonts">Fonts</option>
+                                    <option value="Illustrations">Illustrations</option>
+                                    <option value="Icons">Icons</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer border-0 justify-content-start">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit Resource</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /submit resource form -->
+
+        <!-- resourse -->
+        <section>
+            <div class="container-md">
+                <div class="d-flex justify-content-between align-items-start nav-pills-wrapper">
+                    <ul class="nav nav-pills mb-2 mb-lg-0 overflow-auto flex-nowrap" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="fonts-tab" data-bs-toggle="tab" data-bs-target="#fonts" type="button" role="tab" aria-controls="fonts" aria-selected="true">Fonts</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="mockups-tab" data-bs-toggle="tab" data-bs-target="#mockups" type="button" role="tab" aria-controls="mockups" aria-selected="false">Mockups</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="illustrations-tab" data-bs-toggle="tab" data-bs-target="#illustrations" type="button" role="tab" aria-controls="illustrations" aria-selected="false">Illustrations</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Icons-tab" data-bs-toggle="tab" data-bs-target="#Icons" type="button" role="tab" aria-controls="Icons" aria-selected="false">Icons</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Books-tab" data-bs-toggle="tab" data-bs-target="#Books" type="button" role="tab" aria-controls="Books" aria-selected="false">Books</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Inspiration-tab" data-bs-toggle="tab" data-bs-target="#Inspiration" type="button" role="tab" aria-controls="Inspiration" aria-selected="false">Inspiration</button>
+                        </li>
+                    </ul>
+                    <div class="ms-4">
+                        <button role="button" class="btn btn-light">Sort by <img src="images/arrow.png" alt="sort"></button>
+                    </div>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="fonts" role="tabpanel" aria-labelledby="fonts-tab">
+                        <div id="fontResourse" class="row g-4"></div>
+                    </div>
+                    <div class="tab-pane fade" id="mockups" role="tabpanel" aria-labelledby="mockups-tab">
+                        <div id="mockupResourse" class="row g-4"></div>
+                    </div>
+                    <div class="tab-pane fade" id="illustrations" role="tabpanel" aria-labelledby="illustrations-tab">
+                        <div id="illustrationResourse" class="row g-4"></div>
+                    </div>
+                    <div class="tab-pane fade" id="Icons" role="tabpanel" aria-labelledby="Icons-tab">
+                        <div id="iconResourse" class="row g-4"></div>
+                    </div>
+                    <div class="tab-pane fade" id="Books" role="tabpanel" aria-labelledby="Books-tab">
+                        <div id="booksResourse" class="row g-4"><p>No result found</p></div>
+                    </div>
+                    <div class="tab-pane fade" id="Inspiration" role="tabpanel" aria-labelledby="Inspiration-tab">
+                        <div id="inspirationResourse" class="row g-4"><p>No result found</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /resourse -->
+
+    </main>
+
+    <footer>
+        <div class="container-md">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mb-2"><img src="images/contrast-logo.svg" alt="contrast"></div>
+                    <p>Explore a collection of 3400+ curated design resources, both free and paid, developers can use to create landing pages quicker. </p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <h3>Resources</h3>
+                    <ul class="list-unstyled">
+                        <li>Fonts</li>
+                        <li>Illustrations</li>
+                        <li>Mockups</li>
+                        <li>Icons</li>
+                        <li>Books</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <h3>Company</h3>
+                    <ul class="list-unstyled">
+                        <li>About</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <h3>Support</h3>
+                    <ul class="list-unstyled">
+                        <li>FAQ</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <h3>Sponsor</h3>
+                    <ul class="list-unstyled">
+                        <li>Sponsor Resource</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

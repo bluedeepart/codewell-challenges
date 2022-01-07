@@ -1,0 +1,38 @@
+[
+    {
+        "Title": "Google Fonts",
+        "Description": "Making the web more beautiful, fast, and open through great typography.",
+        "Link": "https://freetypography.com/",
+        "Icon": "GoogleFonts.svg"
+    },
+    {
+        "Title": "MyFonts",
+        "Description": "The #1 place to download great @font-face webfonts and desktop fonts.",
+        "Link": "https://fonts.google.com/",
+        "Icon": "MyFontsLogo.svg"
+    },
+    {
+        "Title": "Font Squirrel",
+        "Description": "Font Squirrel scours the internet for high quality and legitimately free fonts.",
+        "Link": "https://usemodify.com/",
+        "Icon": "FontSquirrelLogo.svg"
+    },
+    {
+        "Title": "Adobe Fonts",
+        "Description": "Thousands of beautiful fonts to designers every day by leading foundries.",
+        "Link": "https://www.fontget.com/",
+        "Icon": "AdobeFontsLogo.svg"
+    },
+    {
+        "Title": "FontSpark",
+        "Description": "Helping designers discover the perfect font for their next design project.",
+        "Link": "https://devfonts.gafi.dev/",
+        "Icon": "FontSparkLogo.svg"
+    },
+    {
+        "Title": "BetterWebType",
+        "Description": "A web typography course for web designers and web developers by Matej Latin.",
+        "Link": "https://www.fontget.com/",
+        "Icon": "BetterWebTypeLogo.svg"
+    }
+]

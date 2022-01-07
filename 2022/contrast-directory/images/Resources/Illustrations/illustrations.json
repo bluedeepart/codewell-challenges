@@ -1,0 +1,38 @@
+[
+    {
+        "Title": "Humaaans",
+        "Description": "Cool illustrations of people with the ability to mix and match.",
+        "Link": "https://www.humaaans.com/",
+        "Icon": "humaaans-logo.svg"
+    },
+    {
+        "Title": "DrawKit",
+        "Description": "Illustrations for designers and startups.",
+        "Link": "https://www.drawkit.io/",
+        "Icon": "drawKit-logo.svg"
+    },
+    {
+        "Title": "Absurd Design",
+        "Description": "Free surrealist illustrations for designers and developers.",
+        "Link": "https://absurd.design/",
+        "Icon": "absurd-logo.svg"
+    },
+    {
+        "Title": "unDraw",
+        "Description": "Open-source illustrations for any idea you can imagine and create.",
+        "Link": "https://undraw.co/",
+        "Icon": "unDraw.svg"
+    },
+    {
+        "Title": "ManyPixels",
+        "Description": "Monochromatic, Isometric high-quality illustrations.",
+        "Link": "https://www.manypixels.co/gallery/",
+        "Icon": "manyPixels-logo.svg"
+    },
+    {
+        "Title": "Open Peeps",
+        "Description": "Hand drawn illustration library.",
+        "Link": "https://www.openpeeps.com/",
+        "Icon": "open-peeps-logo.svg"
+    }
+]

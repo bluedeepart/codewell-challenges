@@ -1,0 +1,26 @@
+.newsletter-wrapper{
+    background-color: $primary_color;
+    color: $primary_light;
+    padding: 20px 20px 0;
+
+    h2{
+        color: $white;
+    }
+
+    .form-group{
+        margin-bottom: .5rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .newsletter-wrapper{
+        padding: 40px 40px 0;
+        .form-group{
+            margin-bottom: .5rem;
+            margin-right: 1.5rem;
+        }
+    }
+    
+}

@@ -1,0 +1,39 @@
+[
+    {
+        "Title": "UXWing",
+        "Description": "Well Optimized, Free icons for commercial use.",
+        "Link": "https://uxwing.com/",
+        "Icon": "UXWingLogo.svg"
+    },
+    {
+        "Title": "Shapedfonts Iconclub",
+        "Description": "8000+ free icons for everyone to use.",
+        "Link": "https://shapedfonts.com/iconclub/",
+        "Icon": "ShapedFontsLogo.svg"
+    },
+    {
+        "Title": "Feather Icons",
+        "Description": "Beautiful, customizable open source icons.",
+        "Link": "https://feathericons.com/",
+        "Icon": "FeatherLogo.svg"
+    },
+    {
+        "Title": "Tabler Icons",
+        "Description": "470+ highly customizable open source SVG icons.",
+        "Link": "https://tablericons.com/",
+        "Icon": "TablerIconsLogo.svg"
+    },
+    {
+        "Title": "Icons8",
+        "Description": "Free icons, photos, vectors and tools.",
+        "Link": "https://icons8.com/",
+        "Icon": "Icons8Logo.svg"
+    },
+    {
+        "Title": "Flat Icon",
+        "Description": "The largest database of free icons in PNG, SVG, EPS, PSD and BASE 64 formats.",
+        "Link": "https://www.flaticon.com/",
+        "Icon": "FlaticonLogo.svg"
+    }
+]
+

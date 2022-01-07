@@ -1,0 +1,46 @@
+.nav {
+  &-link {
+    color: $text_color;
+
+    &:hover {
+      color: $primary_color;
+    }
+  }
+
+  &-pills {
+    &-wrapper{
+        margin-bottom: 20px;
+    }
+
+    .nav {
+      &-link {
+          color: $text_color;
+          padding: 8px 18px;
+          line-height: 24px;
+        &.active {
+          background-color: $gray;
+          color: $dark_color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.navbar-toggler{
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+
+    .nav{
+        &-pills {
+            &-wrapper{
+                margin-bottom: 54px;
+            }
+          }
+    }
+}

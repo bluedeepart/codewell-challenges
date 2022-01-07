@@ -1,0 +1,72 @@
+.btn {
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+
+  &-primary {
+    background-color: $primary_color;
+    border-radius: $borderRadius;
+
+    &:hover,
+    &:active{
+      background-color: $primary_light;
+      color: $primary_color;
+    }
+
+    &:focus{
+      background-color: $primary_color;
+      color: $white;
+    }
+  }
+
+  &-secondary {
+    background-color: $primary_light;
+    color: $primary_color;
+
+    &:hover,
+    &:active{
+      background-color: $white;
+      color: $primary_color;
+    }
+
+    &:focus{
+      background-color: $primary_light;
+      color: $primary_color;
+    }
+  }
+
+  &-light{
+      padding: 8px 18px;
+      line-height: 24px;
+      font-weight: normal;
+      color: $text_color;
+      border: 1px solid $border_color;
+      background-color: transparent;
+      width: 115px;
+
+      img{
+          margin-left: .25rem;
+      }
+  }
+
+  &-close{
+    background-image: url(/2022/contrast-directory/images/Close.png);
+    opacity: 1;
+  }
+
+  &:focus,
+  &:active,
+  &:active:focus {
+    box-shadow: none;
+  }
+}
+
+
+@media only screen and (max-width: 767px){
+.btn:not(.btn-light){
+    width: 100%;
+}
+    
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "Title": "Mockup World",
+        "Description": "The biggest source of free photo-realistic Mockups online.",
+        "Link": "https://www.mockupworld.co/",
+        "Icon": "MockupworldLogo.svg"
+    },
+    {
+        "Title": "Collab Shot",
+        "Description": "Real-time screen grabs and image sharing.",
+        "Link": "https://www.collabshot.com/",
+        "Icon": "collabshot-logo.svg"
+    },
+    {
+        "Title": "Facebook Devices",
+        "Description": "Images and Sketch files of popular devices.",
+        "Link": "https://facebook.design/devices",
+        "Icon": "facebook-design-logo.svg"
+    },
+    {
+        "Title": "Animockup",
+        "Description": "Create animated mockups in the browser 🔥.",
+        "Link": "https://animockup.com/",
+        "Icon": "animockup-logo.svg"
+    },
+    {
+        "Title": "Mockuphone",
+        "Description": "100% free mockups for all devices including IOS, Android, Windows Phone, Laptop & Desktop and TV",
+        "Link": "https://mockuphone.com/",
+        "Icon": "MockuPhone.svg"
+    },
+    {
+        "Title": "Device Shots",
+        "Description": "Create high-resolution device mockups for social media, for free",
+        "Link": "https://deviceshots.com/",
+        "Icon": "deviceShots-logo.svg"
+    }
+]
