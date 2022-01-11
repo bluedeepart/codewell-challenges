@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     font-size: 18px;
+    font-family: $font1;
+    color: $text_color;
+    line-height: 1.5;
+
+    @include for-xs{
+        font-size: 16px;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: $black;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+ul{
+    @include reset-list;
+
+    li{
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $defaultPad;
+    padding-right: $defaultPad;
+
+    @include for-xl{
+        max-width: calc(#{$container} + #{$defaultPad} + #{$defaultPad});
+    }
+}

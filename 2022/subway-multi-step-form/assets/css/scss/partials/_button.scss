@@ -1,0 +1,26 @@
+.btn {
+    @extend %defaultInput;
+    cursor: pointer;
+
+    &--primary {
+        background-color: $primary_color;
+        color: $white;
+        border-color: $primary_color;
+
+        &:hover {
+            background-color: $primary_dark;
+        }
+    }
+
+    &--secondary {
+        border-color: $border_color;
+
+        &:hover {
+            background-color: $gray;
+        }
+    }
+
+    @include for-md-down {
+        width: 100%;
+    }
+}

@@ -1,0 +1,32 @@
+.form {
+
+    // &__group {
+    //     margin-bottom: 1rem;
+    // }
+
+    &__label {
+        display: block;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        color: $black;
+    }
+
+    &__input {
+        @extend %defaultInput;
+        border-color: $border_color;
+        text-align: left;
+        width: 100%;
+
+        &:focus{
+            border-color: $blue;
+        }
+    }
+}
+
+::placeholder {
+    @include placeholder;
+}
+
+::-moz-placeholder {
+    @include placeholder;
+}

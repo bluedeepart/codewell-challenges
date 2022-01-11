@@ -1,0 +1,49 @@
+$primary_color: #0FAF51;
+$primary_dark: #0AAB94;
+$text_color: #595959;
+$border_color: #E2E4E8;
+$input_color: #333C48;
+$placeholder_color: #949FAE;
+$gray: #F9F9FB;
+$dark_gray: #747474;
+$blue: #255CE9;
+$black: #000;
+$white: #fff;
+$font1: 'Open Sans', sans-serif;
+
+$drop_border: #A4B7DC;
+$drop_bg: #FBFCFE;
+
+$xl: 1180px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$xs: 400px;
+
+$defaultPad: 20px;
+$container: 1140px;
+
+%borderRadius5{
+    border-radius: 5px;
+}
+
+%defaultInput{
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 16px 26px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 18px;
+    line-height: 1.278;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+@media only screen and (max-width: $xs) {
+    %defaultInput{
+        font-size: 16px;
+        padding: 16px 20px;
+    }
+}

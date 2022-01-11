@@ -1,0 +1,44 @@
+.footer {
+    padding: 35px 0;
+    border-top: 1px solid $border_color;
+    // position: sticky;
+    // position: -webkit-sticky;
+    // bottom: 0;
+    z-index: 1;
+    background-color: $white;
+
+    @include for-md {
+
+        @at-root {
+            &__wrapper {
+                @include flex-between;
+            }
+        }
+
+        ul {
+            @include flex-center;
+            li{
+                &:not(:first-child){
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+
+    @include for-sm{
+        @at-root {
+            &__wrapper {
+                @include flex-between;
+            }
+        }
+
+        ul {
+            @include flex-center;
+            li{
+                &:not(:last-child){
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}

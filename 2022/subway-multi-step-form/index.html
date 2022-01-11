@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Subway multistep form template, Codewell challenge done by Deepart. Practicing CSS, loops, and fetch Javascript skills with this challenge." />
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <title>Subway multistep form template | Codewell Challenge</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <img src="assets/images/logo.svg" alt="Subway">
+            </div>
+            <div class="header__cta">
+                <button role="button" class="btn btn--secondary">Create an account</button>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- main -->
+    <main>
+
+        <!-- stepper -->
+        <section class="stepper">
+            <div class="container stepper__container">
+                <ul class="stepper__list">
+                    <li class="stepper__list__item active" data-step="step-1">Full Name</li>
+                    <li class="stepper__list__item" data-step="step-2">Personal Information</li>
+                    <li class="stepper__list__item" data-step="step-3">Identification</li>
+                    <li class="stepper__list__item" data-step="step-4">Your QR Code</li>
+                </ul>
+
+                <div class="stepper__wrapper">
+                    <!-- full name -->
+                    <article class="stepper__content active" id="step-1">
+                        <h2>Using the Subway has never been easier!</h2>
+                        <p>Complete the sign up process and receive a QR code you can use to use the Subway anywhere in the U.S.</p>
+                        <form id="full-name" class="form form--1" method="post">
+                            <div class="form__group">
+                                <label for="firstName" class="form__label">First Name</label>
+                                <input type="text" name="firstName" id="fullName" class="form__input" placeholder="Steve">
+                            </div>
+                            <div class="form__group">
+                                <label for="middleName" class="form__label">Middle Name</label>
+                                <input type="text" name="middleName" id="fullName" class="form__input" placeholder="Andrew">
+                            </div>
+                            <div class="form__group">
+                                <label for="lastName" class="form__label">Last Name</label>
+                                <input type="text" name="lastName" id="fullName" class="form__input" placeholder="Hernands">
+                            </div>
+                            <div class="form__btn">
+                                <button role="button" class="btn btn--primary" data-goto="step-2">Next</button>
+                            </div>
+                        </form>
+                    </article>
+                    <!-- /full name -->
+
+
+                    <!-- Personal Information -->
+                    <article class="stepper__content" id="step-2">
+                        <h2>Enter your personal information</h2>
+                        <p>This is used to match what you wrote to confirm your identity. This is required by law.</p>
+                        <form id="personal-information" class="form form--2">
+                            <div class="form__group">
+                                <label for="dob" class="form__label">Date of Birth</label>
+                                <input type="text" name="dob" id="fullName" class="form__input" placeholder="May 5, 1976">
+                                <!-- <input type="date" name="dob" id="fullName" class="form__input" placeholder="May 5, 1976"> -->
+                            </div>
+                            <div class="form__group">
+                                <label for="phoneNumber" class="form__label">Phone Number</label>
+                                <input type="tel" name="phoneNumber" id="fullName" class="form__input" placeholder="521-231-464">
+                            </div>
+                            <div class="form__group">
+                                <label for="address" class="form__label">Address</label>
+                                <input type="text" name="address" id="fullName" class="form__input" placeholder="15 Yemen Road, Yemen">
+                            </div>
+                            <div class="form__btn">
+                                <button role="button" class="btn btn--primary" data-goto="step-3">Next</button>
+                            </div>
+                        </form>
+                    </article>
+                    <!-- /Personal Information -->
+
+                    <!-- Identification -->
+                    <article class="stepper__content" id="step-3">
+                        <h2>Upload identification</h2>
+                        <p>Acceptable forms of identification are ID, Driver’s License, or College ID.</p>
+                        <form class="file__upload__form" id="file-upload-form">
+                            <div class="file__upload">
+                                <label for="drag-file">
+                                    <div><img src="assets/images/folder.svg" alt="Folder" class="icon"></div>
+                                    <div class="drag-msg">Drag and drop an image of your ID here</div>
+                                    <input type="file" name="drag-file" id="drag-file" hidden>
+                                </label>
+                            </div>
+                            <div class="form__btn">
+                                <button role="button" class="btn btn--primary" data-goto="step-4">Next</button>
+                            </div>
+                        </form>
+                    </article>
+                    <!-- /Identification -->
+
+                    <!-- Your QR Code -->
+                    <article class="stepper__content" id="step-4">
+                        <h2>Here’s your QR Code!</h2>
+                        <p>Scan this code the next time you’re in the subway, you will not need to pay for tickets.</p>
+                        <div><a href="assets/images/qr-code.svg" download><img src="assets/images/qr-code.svg" alt="QR Code" download></a></div>
+                    </article>
+                    <!-- /Your QR Code -->
+
+                </div>
+            </div>
+        </section>
+        <!-- /form stepper -->
+
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__wrapper">
+                <div class="footer-copyright">© 2021 Codewell.cc</div>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

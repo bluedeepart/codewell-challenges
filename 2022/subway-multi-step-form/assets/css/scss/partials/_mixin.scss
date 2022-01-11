@@ -1,0 +1,58 @@
+@mixin for-md {
+    @media only screen and (min-width: $md) {
+        @content;
+    }
+}
+
+@mixin for-lg {
+    @media only screen and (min-width: $lg) {
+        @content;
+    }
+}
+
+@mixin for-xl {
+    @media only screen and (min-width: $xl) {
+        @content;
+    }
+}
+
+@mixin for-md-down {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin for-sm {
+    @media only screen and (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin for-xs {
+    @media only screen and (max-width: $xs) {
+        @content;
+    }
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@mixin placeholder{
+    color: $placeholder_color;
+    opacity: 1;
+}

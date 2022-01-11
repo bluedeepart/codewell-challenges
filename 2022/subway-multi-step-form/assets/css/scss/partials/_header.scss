@@ -1,0 +1,17 @@
+.header {
+    padding: $defaultPad 0;
+    // position: sticky;
+    // position: -webkit-sticky;
+    // top: 0;
+    background-color: $white;
+
+    &__container {
+        @include flex-between;
+        align-items: center;
+    }
+
+    @include for-md{
+        padding: 40px 0;
+    }
+
+}

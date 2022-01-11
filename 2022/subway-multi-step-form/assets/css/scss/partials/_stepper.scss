@@ -1,0 +1,128 @@
+.stepper {
+
+    /* list */
+    &__list {
+        counter-reset: li;
+
+        @include for-md {
+            @include flex-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            margin-bottom: 2rem;
+
+            &::before {
+                content: counter(li);
+                counter-increment: li;
+                @extend %borderRadius5;
+                font-weight: bold;
+                text-align: center;
+                width: 57px;
+                height: 59px;
+                line-height: 59px;
+                display: inline-block;
+                color: $dark_gray;
+                background-color: $gray;
+                margin-right: 1rem;
+            }
+
+            &.active {
+
+                &::before {
+                    color: $white;
+                    background-color: $primary_color;
+                }
+            }
+        }
+    }
+
+    /* content */
+    &__content {
+        text-align: center;
+        padding-bottom: 2rem;
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        transition: all .3s ease-in-out;
+
+        &.active{
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        p {
+            margin-bottom: 36px;
+        }
+
+        .form {
+            display: grid;
+            grid-gap: 36px;
+        }
+
+        .file__upload {
+            border: 2px dashed $drop_border;
+            background-color: $drop_bg;
+            padding: .5rem;
+            margin-bottom: 36px;
+
+            img{
+                display: block;
+                margin: auto;
+            }
+
+            label {
+                min-height: 192px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+
+                .icon {
+                    display: block;
+                    margin: 0 auto 1rem;
+                }
+            }
+
+            &.drag-enter {
+                background-color: $gray;
+                border-color: $primary_color;
+            }
+
+        }
+
+        @include for-xl {
+            max-width: 70%;
+        }
+
+        @include for-md {
+            margin: 2rem auto;
+            padding: 3rem 0;
+
+            .file__upload {
+
+                &__form {
+                    max-width: 560px;
+                    margin: auto;
+                }
+
+            }
+
+            .form {
+                grid-template-columns: repeat(3, 1fr);
+
+                &__btn {
+                    grid-column: 3;
+                    text-align: right;
+                }
+            }
+
+            p {
+                padding: 0 4rem;
+                margin-bottom: 48px;
+            }
+        }
+    }
+}
