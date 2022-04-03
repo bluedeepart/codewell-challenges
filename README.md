@@ -9,7 +9,7 @@ Free or paid, all templates are high quality and will make great portfolio piece
 
 Project URL
 
-- [GitHub Pages](https://bluedeepart.github.io/codewell-challenges/)
+- [GitHub](https://bluedeepart.github.io/codewell-challenges/)
 
 They're super easy to setup and you should have your website up and running in no time, just follow their instructions.
 
