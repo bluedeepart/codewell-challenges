@@ -1,8 +1,9 @@
 window.addEventListener("DOMContentLoaded", function () {
   const showResourceData = async (resourseFolder, resourcePath, root) => {
     const response = await fetch(
-      `/2022/contrast-directory/images/Resources/${resourseFolder}/${resourcePath}`
+      `/2022/contrast-directory/data/${resourcePath}`
     );
+    console.log(response);
     const allData = await response.json();
     const rootHtml = document.getElementById(root);
     for (let d in allData) {
