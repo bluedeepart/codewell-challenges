@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function () {
   const showResourceData = async (resourseFolder, resourcePath, root) => {
     const response = await fetch(
-      `/2022/contrast-directory/data/${resourcePath}`
+      `data/${resourcePath}`
     );
     console.log(response);
     const allData = await response.json();
